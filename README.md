@@ -93,7 +93,8 @@ define('WP_REDIS_SERVERS',[
 ]);
 ```
 2. Ubah tulisan INFO menjadi info pada `wp-content\plugins\redis-cache\includes\predis\src\CommandServerInfo.php`
-3. Enable plugin, dan cek `diagnostic`
+3. Enable plugin
+![alt text](img/wordpress-redis-plugin.JPG)
 
 #### Beberapa Halaman Sampel Wordpress
 1. Terdiri dari banyak teks
