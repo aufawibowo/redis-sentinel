@@ -95,6 +95,26 @@ define('WP_REDIS_SERVERS',[
 2. Ubah tulisan INFO menjadi info pada `wp-content\plugins\redis-cache\includes\predis\src\CommandServerInfo.php`
 3. Enable plugin, dan cek `diagnostic`
 
+#### Beberapa Halaman Sampel Wordpress
+1. Terdiri dari banyak teks
+![alt text](img/wordpress-dummy-page-1.JPG)
+2. Terdiri dari teks dan gambar
+![alt text](img/wordpress-dummy-page-2.JPG)
+3. Terdiri dari kupulan gambar
+![alt text](img/wordpress-dummy-page-3.JPG)
+
+#### Uji Tes
+1. Tes request 50 koneksi Tanpa Redis
+![alt text](img/jmeter1.JPG)
+2. Tes request 50 koneksi Dengan Redis
+![alt text](img/jmeter2.JPG)
+3. Tes request 203 koneksi Tanpa Redis
+![alt text](img/jmeter3.JPG)
+4. Tes request 203 koneksi Dengan Redis
+![alt text](img/jmeter3.JPG)
+
+#### Hasil 
+Dari hasil uji tes menunjukkan bahwa Wordpress yang menggunakan redis memiliki rata-rata sampling time lebih lambat. Hal ini dapat disebabkan  post yang tersimpan di redis memiliki string value yang besar.
 
 ### Uji Penunjukan Master Baru Dengan Metode Failover
 Redis sentinel memiliki fitur untuk menunjuk master baru apabila master terdahulu tidak lagi aktif. Hal ini dimungkinkan karena terdapat sentinel yang melakukan pengamatan aktif kepada node-node yang ada. Sentinel akan melakukan 'voting' terlebih dahulu baru kemudian menentukan master.
