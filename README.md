@@ -106,13 +106,13 @@ define('WP_REDIS_SERVERS',[
 
 #### Uji Tes
 1. Tes request 50 koneksi Tanpa Redis
-![alt text](img/jmeter1.JPG)
+![alt text](img/jmeter1.jpg)
 2. Tes request 50 koneksi Dengan Redis
-![alt text](img/jmeter2.JPG)
+![alt text](img/jmeter2.jpg)
 3. Tes request 203 koneksi Tanpa Redis
-![alt text](img/jmeter3.JPG)
+![alt text](img/jmeter3.jpg)
 4. Tes request 203 koneksi Dengan Redis
-![alt text](img/jmeter3.JPG)
+![alt text](img/jmeter3.jpg)
 
 #### Hasil 
 Dari hasil uji tes menunjukkan bahwa Wordpress yang menggunakan redis memiliki rata-rata sampling time lebih lambat. Hal ini dapat disebabkan  post yang tersimpan di redis memiliki string value yang besar.
