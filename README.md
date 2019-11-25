@@ -9,4 +9,8 @@
 4. Lakukan pengujian menggunakan JMeter untuk mengecek perbedaan load time dari dua server web tersebut. Buat kesimpulan dari pengujian yang telah dilakukan.
 5. Lakukan pula pengujian untuk menunjukkan bahwa proses fail over menggunakan Redis Sentinel berhasil. Caranya dengan mematikan salah satu server Redis dan mengecek siapa master node baru yang terpilih.
 
+## Deskripsi Singkat
+
 ## Implementasi Arsitektur
+![alt text](img/diagram.JPG)
+
