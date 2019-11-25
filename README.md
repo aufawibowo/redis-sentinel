@@ -35,9 +35,9 @@ Masing-masing dalam bentuk Vagrant Box yang terdiri dari tiga node:
     IP: 192.168.16.186 
     ```
 ## Direktori Folder
-`/conf` : berisi file konfigurasi untuk disalin ke masing-masing node sesuai perintah file yang berada di `/provision`
-`/provision` : berisi file perintah untuk mengatur (provisioning) masing-masing vagrant box
-`Vagrantfile` : merupakan file utama yang dibutuhkan vagrant ketika mengeksekusi `vagrant up`. File berisi definisi-definisi yang diperlukan untuk membentuk box-box didalam repository ini.
+- `/conf` : berisi file konfigurasi untuk disalin ke masing-masing node sesuai perintah file yang berada di `/provision`.
+- `/provision` : berisi file perintah untuk mengatur (provisioning) masing-masing vagrant box.
+- `Vagrantfile` : merupakan file utama yang dibutuhkan vagrant ketika mengeksekusi `vagrant up`. File berisi definisi-definisi yang diperlukan untuk membentuk box-box didalam repository ini.
 ## Demo
 ### Inisiasi Sistem
 1. Eksekusi `vagrant up` dari repository ini
